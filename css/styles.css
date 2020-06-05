@@ -155,7 +155,7 @@ nav {
   grid-column-gap: 1px;
   grid-row-gap: 0px; }
   .standard__section-row .standard__section-col {
-    height: auto; }
+    height: 38rem; }
     .standard__section-row .standard__section-col .standard__section-container {
       padding-right: 5rem;
       padding-left: 5rem;
@@ -218,7 +218,7 @@ nav {
       overflow: hidden;
       background: url("../img/arte.jpg");
       width: 100%;
-      height: 40rem;
+      height: 38rem;
       position: relative;
       background-repeat: no-repeat;
       background-position: center;
@@ -241,3 +241,58 @@ nav {
     .standard__section-row .standard__section-col .standard__section-container {
       padding-right: 1.5rem;
       padding-left: 1.5rem; } }
+.services {
+  height: auto;
+  background: #fafafa;
+  padding-left: 4rem;
+  padding-right: 4rem; }
+  .services .services__text-container {
+    text-align: center;
+    padding: 4rem; }
+    .services .services__text-container h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-family: 'Roboto', sans-serif; }
+    .services .services__text-container p {
+      font-family: 'Manrope', sans-serif;
+      color: grey; }
+  .services .services__cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 1px; }
+    .services .services__cards-container .services__card-col {
+      height: auto;
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.25s ease-in-out; }
+      .services .services__cards-container .services__card-col .services__card {
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        text-align: center;
+        background: white;
+        padding-top: 4rem;
+        padding-bottom: 3.5rem;
+        width: 23rem; }
+        .services .services__cards-container .services__card-col .services__card h3 {
+          font-family: 'Roboto', sans-serif; }
+        .services .services__cards-container .services__card-col .services__card p {
+          font-family: 'Manrope', sans-serif;
+          padding-right: 4rem;
+          padding-left: 4rem; }
+        .services .services__cards-container .services__card-col .services__card .services__card-icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-left: auto;
+          margin-right: auto;
+          height: 5rem;
+          background: #325eff;
+          width: 5rem;
+          border-radius: 50%; }
+          .services .services__cards-container .services__card-col .services__card .services__card-icon .fas {
+            font-size: 2rem;
+            color: white; }
+      .services .services__cards-container .services__card-col .services__card:hover {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }

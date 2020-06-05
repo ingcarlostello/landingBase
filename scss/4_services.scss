@@ -1,0 +1,76 @@
+.services{
+    height: auto;
+    background: #fafafa;
+       padding-left: 4rem;
+            padding-right:4rem ;
+    .services__text-container{
+        text-align: center;
+        padding:4rem;
+        h1{
+            margin:0;
+            font-size: 2.5rem;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        p{
+            font-family: 'Manrope', sans-serif;
+            color:grey;
+        }
+    }
+
+    .services__cards-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 1px;
+       
+
+        .services__card-col{
+            height: auto;           
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.25s ease-in-out;
+         
+        
+             .services__card{  
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);            
+                text-align: center;           
+                background: white;
+                padding-top: 4rem;
+                padding-bottom: 3.5rem;
+
+                
+                width: 23rem;    
+                h3{
+                    font-family: 'Roboto', sans-serif;
+                }       
+                p{
+                    font-family: 'Manrope', sans-serif;
+                    padding-right: 4rem;
+                    padding-left: 4rem;
+                }    
+                .services__card-icon{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                    height: 5rem;
+                    background: #325eff;
+                    width: 5rem;             
+                    border-radius: 50%;
+                    .fas{
+                        font-size: 2rem;
+                        color:white
+                    }
+                }
+            }
+            .services__card:hover{
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+            }
+
+        }
+    }
+}
