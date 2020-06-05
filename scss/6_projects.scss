@@ -1,0 +1,51 @@
+@import "mixins";
+.projects {
+    .projects__text-container {
+        text-align: center;
+        padding-top: 4rem;
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-family: "Roboto", sans-serif;
+        }
+
+        p {
+            font-family: "Manrope", sans-serif;
+            color: grey;
+        }
+    }
+    
+    .project__section-container-image {
+        overflow: hidden;
+        background: url("../img/bonsai.jpg");
+        width: 100%;
+        height: 38rem;
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .project__section-container-image-flowers{
+        overflow: hidden;
+        background: url("../img/flores2.jpg");
+        width: 100%;
+        height: 38rem;
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .project__section-container-image-flowers1{
+         overflow: hidden;
+        background: url("../img/flores.jpg");
+        width: 100%;
+        height: 38rem;
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    @include mediaQueryProjectsSection;
+}
