@@ -58,7 +58,7 @@ nav {
       top: 4rem;
       left: -100%;
       text-align: center;
-      transition: all .8s;
+      transition: all 0.8s;
       margin-right: 0px;
       padding-left: 0px; }
       nav ul li {
@@ -69,9 +69,10 @@ nav {
         nav ul li a {
           font-size: 2rem;
           color: black; }
-        nav ul li a:hover, nav ul li a.active {
+        nav ul li a:hover,
+        nav ul li a.active {
           background: #325eff;
-          transition: .2s; } }
+          transition: 0.2s; } }
 .hero {
   overflow: hidden;
   background: linear-gradient(to right, rgba(5, 117, 230, 0.3), rgba(2, 27, 121, 0.3)), url("../img/paisajefrio.jpg");
@@ -243,24 +244,23 @@ nav {
       padding-left: 1.5rem; } }
 .services {
   height: auto;
-  background: #fafafa;
-  padding-left: 4rem;
-  padding-right: 4rem; }
+  background: #fafafa; }
   .services .services__text-container {
     text-align: center;
-    padding: 4rem; }
+    padding-top: 4rem; }
     .services .services__text-container h1 {
       margin: 0;
       font-size: 2.5rem;
-      font-family: 'Roboto', sans-serif; }
+      font-family: "Roboto", sans-serif; }
     .services .services__text-container p {
-      font-family: 'Manrope', sans-serif;
+      font-family: "Manrope", sans-serif;
       color: grey; }
   .services .services__cards-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    grid-column-gap: 1px; }
+    grid-column-gap: 1px;
+    padding-top: 4rem; }
     .services .services__cards-container .services__card-col {
       height: auto;
       margin-top: 1rem;
@@ -274,11 +274,11 @@ nav {
         background: white;
         padding-top: 4rem;
         padding-bottom: 3.5rem;
-        width: 23rem; }
+        margin: 0 2rem; }
         .services .services__cards-container .services__card-col .services__card h3 {
-          font-family: 'Roboto', sans-serif; }
+          font-family: "Roboto", sans-serif; }
         .services .services__cards-container .services__card-col .services__card p {
-          font-family: 'Manrope', sans-serif;
+          font-family: "Manrope", sans-serif;
           padding-right: 4rem;
           padding-left: 4rem; }
         .services .services__cards-container .services__card-col .services__card .services__card-icon {
@@ -296,3 +296,22 @@ nav {
             color: white; }
       .services .services__cards-container .services__card-col .services__card:hover {
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+  @media (max-width: 768px) {
+    .services .services__cards-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 8px;
+      grid-row-gap: 0px; }
+      .services .services__cards-container .services__card-col .services__card {
+        margin: 1rem 2rem 0 2rem; } }
+  @media (max-width: 485px) {
+    .services .services__cards-container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 8px;
+      grid-row-gap: 0px; }
+      .services .services__cards-container .standard__section-col .standard__section-container {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem; } }

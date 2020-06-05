@@ -1,53 +1,49 @@
-@mixin mediaQueryNavbar{
+@mixin mediaQueryNavbar {
     @media (max-width: 768px) {
-        nav{
+        nav {
             background: white;
-            #check:checked ~ ul{
+            #check:checked ~ ul {
                 left: 0;
             }
-            .navbar__hamburger-btn{
-                display: block; 
+            .navbar__hamburger-btn {
+                display: block;
             }
 
-            .navbar__logo{
+            .navbar__logo {
                 font-size: 2rem;
                 padding-left: 1rem;
             }
 
-
-
-            ul{
+            ul {
                 position: fixed;
                 width: 100%;
                 height: 100vh;
                 background: #fafafa;
                 top: 4rem;
                 left: -100%;
-                text-align:center;
-                transition: all .8s;
+                text-align: center;
+                transition: all 0.8s;
                 margin-right: 0px;
                 padding-left: 0px;
-               
-               
-                li{
+
+                li {
                     display: block;
-                   
+
                     margin: 5rem 0;
-                    line-height: 30px;                        
+                    line-height: 30px;
                     width: 100%;
 
-                    a{                        
+                    a {
                         font-size: 2rem;
                         color: black;
                     }
-                    a:hover,a.active{  
+                    a:hover,
+                    a.active {
                         background: #325eff;
-                        transition: .2s;
-                      
+                        transition: 0.2s;
                     }
                 }
             }
-            
         }
     }
 }
@@ -60,7 +56,6 @@
             grid-template-rows: 1fr;
             grid-column-gap: 8px;
             grid-row-gap: 0px;
-        
         }
     }
 
@@ -70,16 +65,48 @@
             grid-template-columns: repeat(1, 1fr);
             grid-template-rows: 1fr;
             grid-column-gap: 8px;
-            grid-row-gap: 0px; 
-            .standard__section-col{
-                .standard__section-container{
-                    padding-right:1.5rem ;
-                    padding-left:1.5rem ;
-               
-                }  
-            }            
+            grid-row-gap: 0px;
+            .standard__section-col {
+                .standard__section-container {
+                    padding-right: 1.5rem;
+                    padding-left: 1.5rem;
+                }
+            }
         }
-    } 
-    
+    }
 }
 
+@mixin mediaQueryServicesSection {
+    @media (max-width: 768px) {
+       
+        .services__cards-container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: 1fr;
+                grid-column-gap: 8px;
+                grid-row-gap: 0px;
+               
+                .services__card-col {
+                    .services__card {
+                        margin: 1rem 2rem 0 2rem
+                    }
+                }
+            }
+    }
+
+    @media (max-width: 485px) {
+        .services__cards-container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: 1fr;
+            grid-column-gap: 8px;
+            grid-row-gap: 0px;
+            .standard__section-col {
+                .standard__section-container {
+                    padding-right: 1.5rem;
+                    padding-left: 1.5rem;
+                }
+            }
+        }
+    }
+}
