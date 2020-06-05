@@ -1,0 +1,106 @@
+.standard__section-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 1px;
+    grid-row-gap: 0px;  
+    
+    .standard__section-col{
+        height: auto;
+        padding-right:5rem ;
+        padding-left:5rem ;
+
+        .standard__section-container{
+          margin-top: 5rem;
+            .standard__section-main-title{
+                font-size: 3.25rem;
+                font-family: 'Roboto', sans-serif;
+                color:black;
+                margin: 0 auto
+            }  
+
+            .standard__section-header-paragraph{
+                margin-top: 3rem;
+                font-family: 'Manrope', sans-serif;
+                color:grey;
+            }        
+
+            .standard__section-btn{
+                
+                text-transform: uppercase;
+                text-decoration: none;            
+                padding: 1rem 3rem;
+                margin-top: 3rem;
+                margin-bottom: 6rem;
+
+                .btn:link,
+                .btn:visited{
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    padding: 1.5rem 7rem;
+                    display: inline-block;
+                    border-radius: 10rem;
+                    transition: all .2s;
+                    position: relative; 
+                    font-family: 'Manrope', sans-serif;
+                }
+                .btn-white{
+                    background-color: #325eff;
+                    color:white
+                }
+
+                .btn:hover{
+                    transform: translateY(-.3rem);
+                    box-shadow: 0 1rem 2rem rgba(0,0,0, .2);
+                    
+                }
+                .btn:active{
+                    transform: translateY(-.1rem);
+                    box-shadow: 0 .5rem 1rem rgba(0,0,0, .2);
+                }
+
+                .btn::after{
+                    content: "";
+                    display:inline-block;
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 10rem;
+                    position: absolute;
+                    top:0;
+                    left: 0;
+                    z-index: -1;
+                    transition: all .4s;
+
+                }
+
+                .btn-white::after{
+                    background-color: #325eff;
+                }
+                .btn:hover::after{
+                    transform: scaleX(1.4) scaleY(1.6);
+                    opacity: 0;
+                }
+
+                .btn-animated{
+                    animation:moveInBottom .5s ease-out .75s;
+                    animation-fill-mode: backwards;
+                }
+
+            }
+        }
+    
+        
+    }
+
+    .standard__section-col-image{
+        background: url("../img/arte.jpg");
+        width: 100%;
+        height: auto;
+        position: relative;    
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; 
+        overflow: hidden;        
+    }
+}
+
