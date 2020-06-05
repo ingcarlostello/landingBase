@@ -244,7 +244,8 @@ nav {
       padding-left: 1.5rem; } }
 .services {
   height: auto;
-  background: #fafafa; }
+  background: #fafafa;
+  padding-bottom: 6.56rem; }
   .services .services__text-container {
     text-align: center;
     padding-top: 4rem; }
@@ -315,3 +316,29 @@ nav {
       .services .services__cards-container .standard__section-col .standard__section-container {
         padding-right: 1.5rem;
         padding-left: 1.5rem; } }
+
+.video {
+  overflow: hidden;
+  background: linear-gradient(to right, rgba(5, 117, 230, 0.3), rgba(2, 27, 121, 0.3)), url("../img/paraiso.jpg");
+  width: 100%;
+  height: 600px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .video .video__container {
+    text-align: center;
+    margin: 0 2rem; }
+    .video .video__container .video__icon i {
+      font-size: 3.37rem;
+      color: white; }
+    .video .video__container h1 {
+      font-size: 2.3rem;
+      font-family: "Roboto", sans-serif;
+      color: white; }
+    .video .video__container p {
+      font-family: "Manrope", sans-serif;
+      color: white; }
