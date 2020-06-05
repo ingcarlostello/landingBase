@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap');
+
+.hero{   
+    overflow: hidden;    
+    background:  linear-gradient(to right, rgba(5, 117, 230, 0.3), rgba(2, 27, 121, 0.3)),url("../img/paisajefrio.jpg");    
+    width: 100%;
+    height: 80%;
+    position: relative;    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    
+    
+    header{
+        
+        display: flex;  
+        height: 100vh;
+        width: 100%;  
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+
+        .hero__header_container-components{
+            margin-top: -9.37rem;
+            text-align: center;
+        }
+        
+        .hero__header-main-title{
+            font-size: 6.25rem;
+            font-family: 'Roboto', sans-serif;
+            color:white;
+           margin: 0 auto
+        }
+
+        .hero__header-paragraph{           
+            text-align: center;
+            color: #fff;
+            font-size: 1rem;
+            letter-spacing: .1rem;
+
+            .header_paragraph{
+                font-family: 'Manrope', sans-serif;
+                color:white;
+            }
+        }        
+
+        .hero__header-container{
+            text-transform: uppercase;
+            text-decoration: none;            
+            padding: 1rem 3rem;
+            margin-top: 1.5rem;
+
+            .btn:link,
+            .btn:visited{
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 1.5rem 7rem;
+            display: inline-block;
+            border-radius: 10rem;
+            transition: all .2s;
+            position: relative; 
+            font-family: 'Manrope', sans-serif;
+            }
+            .btn-white{
+                background-color: #325eff;
+                color:white
+            }
+
+            .btn:hover{
+                transform: translateY(-.3rem);
+                box-shadow: 0 1rem 2rem rgba(0,0,0, .2);
+                
+            }
+            .btn:active{
+                transform: translateY(-.1rem);
+                box-shadow: 0 .5rem 1rem rgba(0,0,0, .2);
+            }
+
+            .btn::after{
+                content: "";
+                display:inline-block;
+                height: 100%;
+                width: 100%;
+                border-radius: 10rem;
+                position: absolute;
+                top:0;
+                left: 0;
+                z-index: -1;
+                transition: all .4s;
+    
+            }
+
+            .btn-white::after{
+                background-color: #325eff;
+            }
+            .btn:hover::after{
+                transform: scaleX(1.4) scaleY(1.6);
+                opacity: 0;
+            }
+
+            .btn-animated{
+                animation:moveInBottom .5s ease-out .75s;
+                animation-fill-mode: backwards;
+            }
+
+        }
+    }
+}
+

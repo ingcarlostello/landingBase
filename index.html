@@ -1,26 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <link rel="stylesheet" href = "./css/normalize.css">
-    <link rel="stylesheet" href = "./css/styles.css">
-    <title>Landing Base</title>
-</head>
-<body>
-    <nav class="navbar">
-        <input type="checkbox" id="check">       
-        <label for="check" class="navbar__hamburger-btn">
-          <i class="fas fa-bars"></i>
-        </label>        
-        <label class="navbar__logo">Landings</label>
-        <ul class="navbar__ul">          
-          <li><a href="#">work</a></li>
-          <li><a href="#">features</a></li>
-          <li><a href="#">blog</a></li>
-          <li><a href="#">contact us</a></li>         
-        </ul>
-    </nav>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/styles.css">
+        <title>Landing Base</title>
+    </head>
+    <body>
+        <section class="hero">
+            <nav class="navbar">
+                <input type="checkbox" id="check">
+                <label for="check" class="navbar__hamburger-btn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <label class="navbar__logo">Landings</label>
+                <ul class="navbar__ul">
+                    <li><a href="#">work</a></li>
+                    <li><a href="#">features</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">contact us</a></li>
+                </ul>
+            </nav>
+            <header class="hero__header">
+                <div class=hero__header_container-components>
+                    <h1 class="hero__header-main-title">Lorem psum</h1>
+                    <div class="hero__header-paragraph">
+                        <p class="header_paragraph">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit.</p>
+                        <p class="header_paragraph">sed nisi laoreet imperdiet.
+                            Integer suscipit mollis urna sit amet condimentum.</p>
+                    </div>
+                    <div class="hero__header-container">
+                        <a class="btn btn-white btn-animated" href="#">view our</a>
+                    </div>
+                </div>
+            </header>
+        </section>
+    </body>
 </html>

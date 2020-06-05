@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap");
 nav {
-  background: #fafafa;
+  padding-top: 2.5rem;
   height: 4rem;
   width: 100%;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+  text-transform: uppercase; }
   nav .navbar__hamburger-btn {
     font-size: 3rem;
     color: black;
@@ -24,19 +26,19 @@ nav {
     nav ul li {
       display: inline-block;
       line-height: 4rem;
-      margin: 0 .9rem; }
+      margin: 0 1rem; }
       nav ul li a {
         color: white;
-        font-size: 1rem;
-        text-decoration: none;
-        padding: .7rem 1rem;
-        border-radius: 0.4rem;
+        font-size: 0.8rem;
+        padding: .5rem 0.8rem;
+        border-radius: 0.2rem;
         font-family: 'Questrial', sans-serif;
-        letter-spacing: .2rem; }
-      nav ul li a.active, nav ul li a:hover {
-        background: #325eff;
+        letter-spacing: .2rem;
+        text-decoration: none; }
+      nav ul li a:hover {
+        background: white;
         transition: .2s;
-        color: white; }
+        color: black; }
 
 @media (max-width: 768px) {
   nav {
@@ -70,3 +72,78 @@ nav {
         nav ul li a:hover, nav ul li a.active {
           background: #325eff;
           transition: .2s; } }
+.hero {
+  overflow: hidden;
+  background: linear-gradient(to right, rgba(5, 117, 230, 0.3), rgba(2, 27, 121, 0.3)), url("../img/paisajefrio.jpg");
+  width: 100%;
+  height: 80%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  .hero header {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column; }
+    .hero header .hero__header_container-components {
+      margin-top: -9.37rem;
+      text-align: center; }
+    .hero header .hero__header-main-title {
+      font-size: 6.25rem;
+      font-family: 'Roboto', sans-serif;
+      color: white;
+      margin: 0 auto; }
+    .hero header .hero__header-paragraph {
+      text-align: center;
+      color: #fff;
+      font-size: 1rem;
+      letter-spacing: .1rem; }
+      .hero header .hero__header-paragraph .header_paragraph {
+        font-family: 'Manrope', sans-serif;
+        color: white; }
+    .hero header .hero__header-container {
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 1rem 3rem;
+      margin-top: 1.5rem; }
+      .hero header .hero__header-container .btn:link,
+      .hero header .hero__header-container .btn:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 7rem;
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all .2s;
+        position: relative;
+        font-family: 'Manrope', sans-serif; }
+      .hero header .hero__header-container .btn-white {
+        background-color: #325eff;
+        color: white; }
+      .hero header .hero__header-container .btn:hover {
+        transform: translateY(-0.3rem);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+      .hero header .hero__header-container .btn:active {
+        transform: translateY(-0.1rem);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+      .hero header .hero__header-container .btn::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s; }
+      .hero header .hero__header-container .btn-white::after {
+        background-color: #325eff; }
+      .hero header .hero__header-container .btn:hover::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0; }
+      .hero header .hero__header-container .btn-animated {
+        animation: moveInBottom .5s ease-out .75s;
+        animation-fill-mode: backwards; }

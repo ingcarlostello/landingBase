@@ -1,10 +1,9 @@
 @import "mixins";
 nav{
-    background: #fafafa;
+    padding-top: 2.5rem;
     height: 4rem;
-    width: 100%;    
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-
+    width: 100%;       
+    text-transform: uppercase;
     .navbar__hamburger-btn{
         font-size: 3rem;
         color: black;
@@ -32,26 +31,24 @@ nav{
         li{
             display: inline-block;           
             line-height: 4rem;
-            margin: 0 .9rem;;
+            margin: 0 1rem;
 
             a{
-                color:white;
-                font-size: 1rem;
-                text-decoration: none;
-                padding: .7rem 1rem; 
-                border-radius: 0.4rem;
+                color: white;
+                font-size: 0.8rem;
+                padding: .5rem 0.8rem; 
+                border-radius: 0.2rem;
                 font-family: 'Questrial', sans-serif;  
                 letter-spacing: .2rem;
+                text-decoration: none;                
             }
 
-            a.active,a:hover{
-                background: #325eff;
+            a:hover{
+                background: white;
                 transition: .2s;
-                color: white;
+                color: black;
             }
-        }
-
-        
+        } 
     }     
 }
 @include mediaQueryNavbar;
