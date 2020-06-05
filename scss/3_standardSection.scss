@@ -3,30 +3,30 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 1px;
-    grid-row-gap: 0px;  
-    
-    .standard__section-col{
-        height: auto;
-        padding-right:5rem ;
-        padding-left:5rem ;
+    grid-row-gap: 0px;
 
+    .standard__section-col{        
+        height: auto;
+        
         .standard__section-container{
-          margin-top: 5rem;
+            padding-right:5rem ;
+            padding-left:5rem ;
+            margin-top: 5rem;
+           text-align: center;
+     
             .standard__section-main-title{
                 font-size: 3.25rem;
                 font-family: 'Roboto', sans-serif;
                 color:black;
                 margin: 0 auto
             }  
-
             .standard__section-header-paragraph{
                 margin-top: 3rem;
                 font-family: 'Manrope', sans-serif;
                 color:grey;
-            }        
-
+            }
             .standard__section-btn{
-                
+                    
                 text-transform: uppercase;
                 text-decoration: none;            
                 padding: 1rem 3rem;
@@ -70,7 +70,6 @@
                     left: 0;
                     z-index: -1;
                     transition: all .4s;
-
                 }
 
                 .btn-white::after{
@@ -87,20 +86,20 @@
                 }
 
             }
-        }
-    
-        
-    }
 
-    .standard__section-col-image{
-        background: url("../img/arte.jpg");
-        width: 100%;
-        height: auto;
-        position: relative;    
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover; 
-        overflow: hidden;        
+        }
+
+        .standard__section-container-image{
+            overflow: hidden;    
+            background: url("../img/arte.jpg");    
+            width: 100%;
+            height: 40rem;
+            position: relative;    
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover; 
+        }
     }
 }
+@include mediaQueryStandardSection;    
 

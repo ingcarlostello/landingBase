@@ -52,3 +52,34 @@
     }
 }
 
+@mixin mediaQueryStandardSection {
+    @media (max-width: 768px) {
+        .standard__section-row {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: 1fr;
+            grid-column-gap: 8px;
+            grid-row-gap: 0px;
+        
+        }
+    }
+
+    @media (max-width: 485px) {
+        .standard__section-row {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: 1fr;
+            grid-column-gap: 8px;
+            grid-row-gap: 0px; 
+            .standard__section-col{
+                .standard__section-container{
+                    padding-right:1.5rem ;
+                    padding-left:1.5rem ;
+               
+                }  
+            }            
+        }
+    } 
+    
+}
+
