@@ -1,0 +1,57 @@
+@import "mixins";
+nav{
+    background: #fafafa;
+    height: 4rem;
+    width: 100%;    
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+    .navbar__hamburger-btn{
+        font-size: 3rem;
+        color: black;
+        float: right;
+        line-height: 4rem;
+        margin-right: 2rem;
+        cursor: pointer;
+        display: none;
+    }
+    #check{
+        display: none;
+    }
+   
+    .navbar__logo{
+        line-height: 4rem;
+        margin-left: 3rem;
+    }
+
+    ul{        
+        float: right;
+        margin-right: 1rem;
+        margin-top: 0;
+        margin-bottom: 0;
+
+        li{
+            display: inline-block;           
+            line-height: 4rem;
+            margin: 0 .9rem;;
+
+            a{
+                color:white;
+                font-size: 1rem;
+                text-decoration: none;
+                padding: .7rem 1rem; 
+                border-radius: 0.4rem;
+                font-family: 'Questrial', sans-serif;  
+                letter-spacing: .2rem;
+            }
+
+            a.active,a:hover{
+                background: #325eff;
+                transition: .2s;
+                color: white;
+            }
+        }
+
+        
+    }     
+}
+@include mediaQueryNavbar;
